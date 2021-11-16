@@ -1,0 +1,167 @@
+html { font-size: 62.5%;  height: 100%; } 
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Kumbh Sans", Arial, Helvetica, sans-serif;
+    width: auto;
+    height: 100%;
+    background-color: #af67e9;
+    background-image: linear-gradient(to bottom right, #af67e9, #6565e7);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.comp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30em;
+    width: 100%;
+    height: auto;
+    margin: 10em auto;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.woman {
+    max-width: 20em;
+    width: 100%;
+    height: auto;
+    margin-top: -9em;
+}
+
+.mobile {
+    display: flex;
+}
+
+.desktop {
+    display: none;
+}
+
+.comp h1 {
+    font-size: 4em;
+    font-weight: 700;
+    margin: 1em auto;
+    color: hsl(238, 29%, 16%);
+}
+
+.Qs h2 {
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+.activeH {
+    font-weight: 700;
+}
+
+.comp p {
+    font-size: 1.2em;
+}
+
+.qandAsContainer {
+    max-width: 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.questionAndAns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3em;
+    padding-bottom: 2em;
+    border-bottom: 2px solid #e7e7e9;
+}
+
+.Qs {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.arrow {
+    max-width: 1em;
+    max-height: 1em;
+    width: 100%;
+    height: 100%;
+    transition: all .3s ease-in-out;
+    transform: rotate(0deg);
+    margin-top: .5em;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+.flipArrow {
+    transform: rotate(180deg);
+}
+
+.ansText  {
+    display: none;
+    margin-top: .5em;
+}
+
+.showAns {
+    display: flex;
+}
+
+@media only screen and (min-width:900px) { 
+
+    html { overflow: hidden; }
+
+    .comp {
+        max-width: 70em;
+        width: 100%;
+        height: auto;
+        margin: 5em auto;
+        background-color: #fff;
+        border-radius: 10px;
+        flex-direction: row;
+    }
+    
+    .woman {
+        max-width: 35em;
+        width: 100%;
+        height: auto;
+        margin: auto 0 auto -9em;
+    }
+    
+    .mobile {
+        display: none;
+    }
+    
+    .desktop {
+        display: flex;
+    }
+    
+    .comp h1 {
+        font-size: 4em;
+        font-weight: 700;
+        margin-left: 0;
+        color: hsl(238, 29%, 16%);
+    }
+
+    .Qs h2 {
+        font-size: 1.8em;
+        font-weight: 400;
+    }
+    
+    .comp p {
+        font-size: 1.4em;
+    }
+    
+    .qandAsContainer {
+        max-width: 30em;
+        margin-left: 10em;
+    }
+
+
+}
